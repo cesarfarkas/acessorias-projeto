@@ -1,0 +1,13 @@
+{
+    "name": "projeto/acessorias",
+    "description": "Um projeto para seleção de emprego",
+    "require": {
+      "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+  }
