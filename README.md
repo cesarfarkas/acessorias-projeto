@@ -27,7 +27,6 @@ Este projeto foi desenvolvido como parte de um teste para a empresa **Acessorias
 ## Estrutura de Pastas
 
 Abaixo está a estrutura de diretórios do projeto:
-
 /acessorias-projeto
 ├── public/
 │   └── index.php
@@ -37,7 +36,26 @@ Abaixo está a estrutura de diretórios do projeto:
 ├── .env
 └── composer.json
 
-Comandos importantes
-  - Para atualizar os arquivos do projeto, execute:
+## Comandos importantes
+- Para atualizar os arquivos do projeto, execute:
    ```bash
     git pull origin main
+
+- Caso precise instalar dependências adicionais, use:
+   ```bash
+   composer update
+
+## Tecnologias utilizadas
+
+    PHP para o backend
+    JavaScript pra o frontend
+    HTML/CSS para o frontend
+    MySQL para o banco de dados
+
+## Contribuições
+
+Sinta-se à vontade para fazer um fork deste repositório, enviar pull requests ou sugerir melhorias.
+
+Projeto desenvolvido por Cesar Farkas.
+
+Esse README agora inclui os passos corretos para rodar o projeto, a estrutura de pastas e as instruções detalhadas de instalação.
