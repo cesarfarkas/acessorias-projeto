@@ -24,17 +24,62 @@ Este projeto foi desenvolvido como parte de um teste para a empresa **Acessorias
    
 6. Acesse o projeto: Abra o navegador e acesse http://localhost:8000.
 
-## Estrutura de Pastas
+# Estrutura de Pastas do Projeto
 
-Abaixo está a estrutura de diretórios do projeto:
-/acessorias-projeto
-├── public/
-│   └── index.php
-├── src/
-├── config/
-├── database.sql
-├── .env
-└── composer.json
+Este projeto é organizado da seguinte maneira:
+
+## Raiz do Projeto
+
+- `.env`: Arquivo de configuração de ambiente.
+- `app.php`: Arquivo principal da aplicação.
+- `composer.json`: Arquivo de configuração do Composer.
+- `composer.lock`: Arquivo de bloqueio de dependências do Composer.
+- `database.sql`: Arquivo de banco de dados.
+
+## Diretórios
+
+### `app/`
+Contém a lógica principal da aplicação, como controladores, modelos e visualizações.
+
+- **Controllers/**
+    - `ClientController.php`: Controlador de clientes.
+- **Models/**
+    - `Client.php`: Modelo para clientes.
+- **Views/**
+    - `clients.php`: Visão para exibir informações dos clientes.
+
+### `config/`
+Contém arquivos de configuração da aplicação.
+
+- `database.php`: Arquivo de configuração do banco de dados.
+
+### `public/`
+Contém arquivos acessíveis ao público, como a página inicial e os arquivos de estilo.
+
+- `index.php`: Arquivo principal da aplicação pública.
+- `styles.css`: Arquivo de estilos CSS.
+- `theme.js`: Arquivo de JavaScript para o tema.
+
+### `vendor/`
+Contém bibliotecas externas e autoloaders gerenciados pelo Composer.
+
+- `autoload.php`: Arquivo de autoload principal.
+- **composer/**
+    - `autoload_classmap.php`: Mapeamento de classes.
+    - `autoload_files.php`: Arquivo de autoload de arquivos.
+    - `autoload_namespaces.php`: Autoload de namespaces.
+    - `autoload_psr4.php`: Autoload de classes PSR-4.
+    - `autoload_real.php`: Lógica de autoload real.
+    - `autoload_static.php`: Autoload estático.
+    - `ClassLoader.php`: Classe responsável pelo carregamento de classes.
+    - `installed.json`: Arquivo JSON de pacotes instalados.
+    - `installed.php`: Arquivo PHP de pacotes instalados.
+    - `InstalledVersions.php`: Versões dos pacotes instalados.
+- **graham-campbell/**: Dependência de pacotes de Graham Campbell.
+- **phpoption/**: Dependência de pacotes PHPOption.
+- **symfony/**: Dependência de pacotes Symfony.
+- **vlucas/**: Dependência de pacotes de VLuca.
+
 
 ## Comandos importantes
 - Para atualizar os arquivos do projeto, execute:
